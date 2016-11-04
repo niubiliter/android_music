@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEEEEE"
+    android:orientation="vertical" >
+
+    <!-- 此处需设置listView背景 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/line1"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="25dp"
+            android:text="歌曲名"
+            android:textColor="#0097A7" />
+
+        <TextView
+            android:id="@+id/line2"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="30dp"
+            android:text="歌手"
+            android:textColor="#0097A7" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/card_listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="@null"
+        android:dividerHeight="10dp"
+        android:listSelector="@android:color/transparent" />
+    <!-- 一定要将divider设置为@null,dividerHeight控制卡片上下距离 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#B2EBF2"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:src="@drawable/mm" />
+
+        <ImageButton
+            android:id="@+id/butonplay"
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:background="#00000000"
+            android:src="@drawable/desk_pre" />
+
+        <ImageButton
+            android:id="@+id/butplay"
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="30dp"
+            android:background="#00000000"
+            android:src="@drawable/desk_play" />
+
+        <ImageButton
+            android:id="@+id/butdownplay"
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="30dp"
+            android:background="#00000000"
+            android:src="@drawable/desk2_next" />
+
+        <Button
+            android:id="@+id/online_btn"
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="30dp"
+            android:background="#00000000"
+            android:src="@drawable/ci"
+            android:text="在线音乐"
+            android:textColor="#FFFFFF" />
+
+        <ImageButton
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="30dp"
+            android:background="#00000000"
+            android:src="@drawable/down" />
+    </LinearLayout>
+
+</LinearLayout>
